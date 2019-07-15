@@ -5,7 +5,9 @@ var exposure = document.getElementById("exposure");
 var clouds = document.getElementById("cover-image");
 var expo_val = 0;
 
-exposure.innerHTML = aperture.value;
+expo_val = Number(aperture.value) + Number(shutter_speed.value) + Number(iso.value);
+exposure.innerHTML = expo_val;
+
 
 aperture.oninput = function(){
     expo_val = Number(this.value) + Number(shutter_speed.value) + Number(iso.value);
