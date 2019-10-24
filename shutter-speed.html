@@ -35,24 +35,26 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-                <ul class="navbar-nav mr-auto">
-                    
-                    <div class="d-flex justify-content-around"><li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="aperture.html">Aperture</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                    <a class="nav-link" href="shutter-speed.html">Shutter Speed</a>
-                    </li>
-                    
-                    <li class="nav-item">
-                    <a class="nav-link" href="iso.html">ISO</a>
-                    </li></div>
+            <ul class="navbar-nav mr-auto">
 
-                    <!-- <li class="nav-item dropdown">
+                <div class="d-flex justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aperture.html">Aperture</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shutter-speed.html">Shutter Speed</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="iso.html">ISO</a>
+                    </li>
+                </div>
+
+                <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
@@ -64,17 +66,70 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li> -->
-                    <!-- <li class="nav-item">
+                <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> -->
 
-                </ul>
+            </ul>
 
 
         </div>
     </nav>
 
     <p class="text-center">Shutter speed under construction</p>
+
+    <img id="cover-image" class="my-4" src="clouds-small.jpg">
+
+
+    <div class="d-flex flex-wrap justify-content-around">
+
+
+        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-primary shutter-speed-button active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> 1/2000
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1/1000
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option3" autocomplete="off"> 1/500
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option4" autocomplete="off"> 1/250
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option5" autocomplete="off"> 1/125
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option6" autocomplete="off"> 1/60
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option7" autocomplete="off"> 1/30
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option8" autocomplete="off"> 1/15
+            </label>
+            <label class="btn btn-primary shutter-speed-button">
+                <input type="radio" name="options" id="option9" autocomplete="off"> 1/5
+            </label>
+
+
+        </div>
+
+        <button type="button" class="btn btn-lg btn-secondary" data-toggle="button">Simulate Exposure</button>
+
+    </div>
+
+
+    <h3 id="description" class="text-center pl-3 pr-3 my-4">
+        Shutter Speed controls how long the image is exposed, and how much blur there will be.
+    </h3>
+
+
+
+
+
+
 
 
     <script src="script.js"></script>
