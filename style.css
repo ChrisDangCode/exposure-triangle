@@ -1,5 +1,28 @@
+/* colors:
+color: #F5F7F9 white background
+color: #343A40 dark grey secondary
+color: #064789 dark blue
+color: #2274A5 link blue
+color: #E7DFC6 tan
+*/
+
+
 body{
-  background-color: #f8f8f8!important;
+  background-color: #f5f7f9!important;
+}
+
+footer{
+  font-size: 1.25rem;
+  background-color: #343a40!important;
+  color: #ffffff;
+}
+
+footer i{
+  color: white;
+}
+
+footer i:hover{
+  color: #2274A5;
 }
 
 h1{font-size: 2.25rem!important;}
