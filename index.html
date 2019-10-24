@@ -35,24 +35,29 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-                <ul class="navbar-nav mr-auto">
-                    
-                        <div class="d-flex justify-content-around"><li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="aperture.html">Aperture</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                        <a class="nav-link" href="shutter-speed.html">Shutter Speed</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                        <a class="nav-link" href="iso.html">ISO</a>
-                        </li></div>
+            <ul class="navbar-nav mr-auto">
 
-                    <!-- <li class="nav-item dropdown">
+                <div class="d-flex justify-content-around">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aperture.html">Aperture</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="shutter-speed.html">Shutter Speed</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="iso.html">ISO</a>
+                    </li>
+
+
+                </div>
+
+
+                <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Dropdown
@@ -64,11 +69,11 @@
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li> -->
-                    <!-- <li class="nav-item">
+                <!-- <li class="nav-item">
                         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li> -->
 
-                </ul>
+            </ul>
 
 
         </div>
@@ -77,24 +82,27 @@
     <img id="cover-image" class="my-4" src="clouds-small.jpg">
 
     <form class="my-4">
-        <label for="aperture">Aperture</label>
+        <label id="settings-label" for="aperture">Aperture</label>
         <input type="range" min="0" max="8" class="custom-range w-75" value="4" id="aperture">
     </form>
 
     <form class="my-4">
-        <label for="shutter-speed">Shutter Speed</label>
+        <label id="settings-label" for="shutter-speed">Shutter Speed</label>
         <input type="range" min="0" max="14" class="custom-range w-75" value="6" id="shutter-speed">
     </form>
 
     <form class="my-4">
-        <label for="iso">ISO</label>
+        <label id="settings-label" for="iso">ISO</label>
         <input type="range" min="0" max="8" class="custom-range w-75" value="0" id="iso">
     </form>
 
     <h2 class="display-4 text-center">
         <p>Exposure Value: <span id="exposure"></span></p>
     </h2>
-    <h3 id="description" class="text-center pl-3 pr-3">Move the sliders to get the same Exposure Value (default: 10).
+
+
+    <h3 id="description" class="text-center pl-3 pr-3">
+        Move the sliders to get the same Exposure Value (default: 10).
     </h3>
 
 
