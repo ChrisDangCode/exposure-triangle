@@ -1,4 +1,7 @@
 /* colors:
+
+color: #36393E Chrome incog dark
+
 color: #F5F7F9 white background
 color: #343A40 dark grey secondary
 color: #064789 dark blue
@@ -8,13 +11,14 @@ color: #E7DFC6 tan
 
 
 body{
-  background-color: #f5f7f9!important;
+  background-color: #36393E!important;
+  color: #ffffff!important;
 }
 
 footer{
   font-size: 1.25rem;
   background-color: #343a40!important;
-  color: #ffffff;
+  color: #ffffff!important;
 }
 
 footer i{
@@ -27,7 +31,15 @@ footer i:hover{
 
 h1{font-size: 2.25rem!important;}
 
-#cover-image{max-width: 50%; display: block;  margin-left: auto; margin-right: auto; margin-top: 5%}
+#cover-image{
+  max-width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  padding: 1px;
+  background-color: #ffffff;
+}
 
 .custom-range{display: block;  margin-left: auto; margin-right: auto;}
 
