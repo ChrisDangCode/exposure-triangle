@@ -48,11 +48,3 @@ iso.oninput = function(){
 
 
 
-
-
-
-
-
-
-
-

@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body onLoad="preLoad()">
 
     <!-- <h1 class="my-3 text-center ">Learn the Exposure Triangle</h1> -->
 
@@ -79,39 +79,39 @@
 
     <p class="text-center">Shutter speed under construction</p>
 
-    <img id="cover-image" class="my-4" src="./images/shutter_speed/shutter-speed-1.jpg">
+    <img id="a" class="my-4" src="./images/shutter_speed/shutter-speed-1.jpg">
 
 
     <div class="d-flex flex-wrap justify-content-around">
 
 
         <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary shutter-speed-button active">
-                <input type="radio" name="options" id="speed-option1" autocomplete="off" checked> 1/2000
+            <label class="btn btn-primary shutter-speed-button active" onclick="im_load('a1');">
+                <input type="radio" name="1" id="speed-option1" autocomplete="off" checked> 1/2000
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option2" autocomplete="off"> 1/1000
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a2');">
+                <input type="radio" name="1" id="speed-option2" autocomplete="off"> 1/1000
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option3" autocomplete="off"> 1/500
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a3');">
+                <input type="radio" name="1" id="speed-option3" autocomplete="off"> 1/500
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option4" autocomplete="off"> 1/250
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a4');">
+                <input type="radio" name="1" id="speed-option4" autocomplete="off"> 1/250
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option5" autocomplete="off"> 1/125
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a5');">
+                <input type="radio" name="1" id="speed-option5" autocomplete="off"> 1/125
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option6" autocomplete="off"> 1/60
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a6');">
+                <input type="radio" name="1" id="speed-option6" autocomplete="off"> 1/60
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option7" autocomplete="off"> 1/30
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a7');">
+                <input type="radio" name="1" id="speed-option7" autocomplete="off"> 1/30
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option8" autocomplete="off"> 1/15
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a8');">
+                <input type="radio" name="1" id="speed-option8" autocomplete="off"> 1/15
             </label>
-            <label class="btn btn-primary shutter-speed-button">
-                <input type="radio" name="options" id="speed-option9" autocomplete="off"> 1/8
+            <label class="btn btn-primary shutter-speed-button" onclick="im_load('a9');">
+                <input type="radio" name="1" id="speed-option9" autocomplete="off"> 1/8
             </label>
 
 
@@ -135,7 +135,7 @@
 
 
 
-    <script src="script.js"></script>
+    <script src="shutter-speed.js"></script>
 </body>
 
 </html>

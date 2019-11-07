@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body onLoad="preLoad()">
 
     <!-- <h1 class="my-3 text-center ">Learn the Exposure Triangle</h1> -->
 
@@ -80,35 +80,35 @@
     <p class="text-center">ISO under construction</p>
 
 
-    <img id="cover-image" class="my-4" src="./images/iso/iso-1.jpg">
+    <img id="a" class="my-4" src="./images/iso/iso-1.jpg">
 
     <div class="d-flex flex-wrap justify-content-around">
 
 
         <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary aperture-button active">
+            <label class="btn btn-primary aperture-button active" onclick="im_load('a1');">
                 <input type="radio" name="options" id="iso-option1" autocomplete="off" checked> 100
             </label>
-            <label class="btn btn-primary aperture-button">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a2');">
                 <input type="radio" name="options" id="iso-option2" autocomplete="off"> 200
             </label>
-            <label class="btn btn-primary aperture-button">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a3');">
                 <input type="radio" name="options" id="iso-option3" autocomplete="off"> 400
             </label>
-            <label class="btn btn-primary aperture-button">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a4');">
                 <input type="radio" name="options" id="iso-option4" autocomplete="off"> 800
             </label>
-            <label class="btn btn-primary aperture-button">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a5');">
                 <input type="radio" name="options" id="iso-option5" autocomplete="off"> 1600
             </label>
-            <label class="btn btn-primary aperture-button">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a6');">
                 <input type="radio" name="options" id="iso-option6" autocomplete="off"> 3200
             </label>
-            <label class="btn btn-primary aperture-button">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a7');">
                 <input type="radio" name="options" id="iso-option7" autocomplete="off"> 6400
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="iso-option7" autocomplete="off"> 12800
+            <label class="btn btn-primary aperture-button" onclick="im_load('a8');">
+                <input type="radio" name="options" id="iso-option8" autocomplete="off"> 12800
             </label>
         </div>
 
@@ -130,7 +130,7 @@
     </footer>
 
 
-    <script src="script.js"></script>
+    <script src="iso.js"></script>
 </body>
 
 </html>
