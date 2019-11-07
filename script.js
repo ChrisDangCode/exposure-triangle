@@ -27,3 +27,32 @@ iso.oninput = function(){
     clouds.style.filter = "brightness("+ Number(expo_val/10) + ")";
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

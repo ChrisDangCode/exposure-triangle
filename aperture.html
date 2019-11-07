@@ -18,11 +18,33 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <script src="https://kit.fontawesome.com/03294d1d25.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/03294d1d25.js" crossorigin="anonymous"></script>
+
+
+    <script>
+        function preLoad() {
+            a1 = new Image; a1.src = './images/aperture/aperture-1.jpg';
+            a2 = new Image; a2.src = './images/aperture/aperture-2.jpg';
+            a3 = new Image; a3.src = './images/aperture/aperture-3.jpg';
+            a4 = new Image; a4.src = './images/aperture/aperture-4.jpg';
+            a5 = new Image; a5.src = './images/aperture/aperture-5.jpg';
+            a6 = new Image; a6.src = './images/aperture/aperture-6.jpg';
+            a7 = new Image; a7.src = './images/aperture/aperture-7.jpg';
+
+            console.log("I AM LOADED");
+        }
+
+        function im_load(image) {
+            console.log("IMAGE LOADED");
+            document.getElementById(image[0]).src = eval(image + ".src")
+            
+        }
+    </script>
+
 
 </head>
 
-<body>
+<body onLoad="preLoad()">
 
     <!-- <h1 class="my-3 text-center ">Learn the Exposure Triangle</h1> -->
 
@@ -79,33 +101,34 @@
 
     <p class="text-center">Apurture under construction. Please visit again later!</p>
 
-    <img id="cover-image" class="my-4" src="clouds-small.jpg">
+    <img id="a" class="my-4" src="./images/aperture/aperture-1.jpg">
 
 
     <div class="d-flex flex-wrap justify-content-around">
 
 
         <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
-            <label class="btn btn-primary aperture-button active">
-                <input type="radio" name="options" id="option1" autocomplete="off" checked> F/1.4
+
+            <label class="btn btn-primary aperture-button active" onclick="im_load('a1');">
+                <input type="radio" name="1" id="aperture-option1" autocomplete="off" checked > F/1.4
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="option2" autocomplete="off"> F/2
+            <label class="btn btn-primary aperture-button" onclick="im_load('a2');">
+                <input type="radio" name="1" id="aperture-option2" autocomplete="off" > F/2
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="option3" autocomplete="off"> F/2.8
+            <label class="btn btn-primary aperture-button" onclick="im_load('a3');">
+                <input type="radio" name="1" id="aperture-option3" autocomplete="off" > F/2.8
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="option4" autocomplete="off"> F/4
+            <label class="btn btn-primary aperture-button" onclick="im_load('a4');">
+                <input type="radio" name="1" id="aperture-option4" autocomplete="off" > F/4
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="option5" autocomplete="off"> F/5.6
+            <label class="btn btn-primary aperture-button" onclick="im_load('a5');">
+                <input type="radio" name="1" id="aperture-option5" autocomplete="off" > F/5.6
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="option6" autocomplete="off"> F/8
+            <label class="btn btn-primary aperture-button" onclick="im_load('a6');">
+                <input type="radio" name="1" id="aperture-option6" autocomplete="off" > F/8
             </label>
-            <label class="btn btn-primary aperture-button">
-                <input type="radio" name="options" id="option7" autocomplete="off"> F/11
+            <label class="btn btn-primary aperture-button" onclick="im_load('a7');">
+                <input type="radio" name="1" id="aperture-option7" autocomplete="off" > F/11
             </label>
         </div>
 
@@ -113,18 +136,18 @@
 
     </div>
 
-   
+
     <h3 id="description" class="text-center pl-3 pr-3 my-4">
-            Apurture controls how much is in focus. 
-        </h3>
+        Apurture controls how much is in focus.
+    </h3>
 
 
-        <footer class="text-center mt-5 py-4">Copyright 2019. Created by Chris Dang.
-                <a href="https://github.com/ChrisDangCode" target="blank"><i class="fab fa-github mx-2"></i></a>
-        </footer>
+    <footer class="text-center mt-5 py-4">Copyright 2019. Created by Chris Dang.
+        <a href="https://github.com/ChrisDangCode" target="blank"><i class="fab fa-github mx-2"></i></a>
+    </footer>
 
 
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
