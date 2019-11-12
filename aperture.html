@@ -87,32 +87,32 @@
     <div class="d-flex flex-wrap justify-content-around">
 
 
-        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+        <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons" id = "Group">
 
-            <label class="btn btn-primary aperture-button active" onclick="im_load('a1');">
+            <label class="btn btn-primary aperture-button active" onclick="im_load('a1'); " id="aperture-label-option1">
                 <input type="radio" name="1" id="aperture-option1" autocomplete="off" checked > F/1.4
             </label>
-            <label class="btn btn-primary aperture-button" onclick="im_load('a2');">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a2'); " id="aperture-label-option2">
                 <input type="radio" name="1" id="aperture-option2" autocomplete="off" > F/2
             </label>
-            <label class="btn btn-primary aperture-button" onclick="im_load('a3');">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a3'); " id="aperture-label-option3">
                 <input type="radio" name="1" id="aperture-option3" autocomplete="off" > F/2.8
             </label>
-            <label class="btn btn-primary aperture-button" onclick="im_load('a4');">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a4'); " id="aperture-label-option4">
                 <input type="radio" name="1" id="aperture-option4" autocomplete="off" > F/4
             </label>
-            <label class="btn btn-primary aperture-button" onclick="im_load('a5');">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a5'); " id="aperture-label-option5">
                 <input type="radio" name="1" id="aperture-option5" autocomplete="off" > F/5.6
             </label>
-            <label class="btn btn-primary aperture-button" onclick="im_load('a6');">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a6'); " id="aperture-label-option6">
                 <input type="radio" name="1" id="aperture-option6" autocomplete="off" > F/8
             </label>
-            <label class="btn btn-primary aperture-button" onclick="im_load('a7');">
+            <label class="btn btn-primary aperture-button" onclick="im_load('a7'); "  id="aperture-label-option7">
                 <input type="radio" name="1" id="aperture-option7" autocomplete="off" > F/11
             </label>
         </div>
 
-        <button type="button" class="btn btn-lg btn-secondary" data-toggle="button">Simulate Exposure</button>
+        <button type="button" class="btn btn-lg btn-secondary simulate" data-toggle="button" onclick="simulate_exposure_aperture();">Simulate Exposure</button>
 
     </div>
 
